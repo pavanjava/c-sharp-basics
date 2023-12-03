@@ -1,2 +1,2 @@
-# This branch demonstrate most of the string manipulation concepts
+# This branch demonstrate most of the classes concepts
 
