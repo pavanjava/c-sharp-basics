@@ -6,11 +6,24 @@ public class Driver
 {
     static void Main(string[] args)
     {
-        Employee employee = new Employee();
-        employee.FirstName = "Pavan Kumar";
-        employee.LastName = "Mantha";
-        employee.languagesKnown = new List<string>() { "Java", "C#", "Java Script", "Data Science" };
+        var ironMan = new IronMan();
+        ironMan.FirstName = "Toney";
+        ironMan.LastName = "Stark";
+        ironMan.IsCapableOfFightingThanos = true;
+        ironMan.SuiteVersion = 8;
         
-        employee.display();
+        var drStrange = new DrStrange();
+        drStrange.FirstName = "dr";
+        drStrange.LastName = "strange";
+        drStrange.IsCapableOfFightingThanos = true;
+        drStrange.IsCapableOfTimeSpaceControlling = true;
+        
+        var hero1 = new HeroHelper<IronMan>(ironMan);
+        hero1.PrintName();
+        hero1.AskHeroToAttack();
+
+        var hero2 = new HeroHelper<DrStrange>(drStrange);
+        hero2.PrintName();
+        hero2.AskHeroToAttack();
     }
 }

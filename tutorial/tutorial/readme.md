@@ -1,2 +1,2 @@
-# This branch demonstrate most of the classes concepts
+# This branch demonstrate basics of generics
 
